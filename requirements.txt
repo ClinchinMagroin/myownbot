@@ -1,0 +1,5 @@
+# To run example notebooks, install required and test dependencies
+pandas==2.0.3
+numpy==1.26.0
+matplotlib==3.8.0
+.[test]

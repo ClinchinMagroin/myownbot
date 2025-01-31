@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  backtesting-bot:
+    build: .
+    container_name: backtesting-bot
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./logs:/app/logs
+    command: ["--data", "data/example_data.csv", "--strategy", "strategies/example_strategy.py", "--output", "output"]
